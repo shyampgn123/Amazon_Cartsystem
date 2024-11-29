@@ -1,0 +1,263 @@
+*{
+ margin:0;
+ padding:0;
+}
+.page1{
+ width:100vw;
+ height:100vh;
+ overflow: hidden;
+ font-family:Roboto;
+}
+.nav{
+ width:95%;
+ height:70px;
+ background:#252527;
+ display:flex;
+ padding:0px 2.5%;
+ align-items:center;
+ justify-content:space-between;
+ color:white;
+}
+.nav input{
+ width:350px;
+ height:35px;
+ padding:5px 20px;
+ font-size:20px;
+ font-weight:500;
+ color:#A5A5A8;
+ border:none;
+ border-radius:5px;
+ outline:none;
+}
+.nav .search-icon{
+ width:50px;
+ height:45px;
+ background:#FF8E0B;
+ margin-left:-10vw;
+ border-radius:0px 5px 5px 0px;
+}
+.nav .order-status p{
+ font-weight:300;
+ font-size:15px;
+}
+.nav .cart-btn{
+ color:#FF8E0B;
+ text-decoration:none;
+ font-size:20px;
+ font-weight:700;
+ padding:5px 10px;
+ border:1px solid #ECA510;
+ border-radius:10px;
+ cursor:pointer;
+ transition:0.5s;
+}
+.nav .cart-btn:hover{
+  background: #FF8E0B;
+  color:black;
+}
+.products-container{
+ width:100%;
+ height:100%;
+ display:grid;
+ grid-template-columns:25% 25% 25% 25%;
+ overflow-y:scroll;
+ grid-auto-rows:550px;
+}
+.products-container .product{
+ min-width:100%;
+ height:550px;
+ border:0.5px solid #00000020;
+}
+.product .p-img{
+  width:80%;
+  height:250px;
+  object-fit:cover;
+  margin:10px 10%;
+}
+.product .name{
+  padding:10px 30px;
+  height:40px;
+  display:flex;
+  align-items:center;
+}
+.product .r-img{
+  width:auto;
+  height:auto;
+  margin:0px 10px 0px 20px;
+}
+.product .rating{
+  width:100%;
+  overflow:hidden;
+  display:flex;
+  align-items:center;
+  font-size:15px;
+  font-weight:600;
+}
+.product .price{
+  padding:5px 30px;
+}
+.product .add-cart-btn{
+  width:80%;
+  height:40px;
+  border:none;
+  margin:15px 10%;
+  background:#FFAD00;
+  color:white;
+  font-size:20px;
+  font-weight:400;
+  border-radius:50px;
+  color:#2B2E2E;
+}
+.nav2{
+  background:white;
+  color:black;
+}
+.nav2 a{
+  color:black;
+  text-decoration:none;
+  font-size:20px;
+}
+.items-count{
+  margin:auto;
+  transform:translate(-70px, 5px);
+}
+.items-count h3{
+  margin:auto;
+  white-space:nowrap;
+  display:flex;
+  font-size:27px;
+  font-weight:500;
+}
+.items-count p{
+  color:#5287CE;
+}
+.rando-font{
+  padding:2px 25px;
+  font-weight:500;
+}
+.cart-container{
+  width:55%;
+  height:600px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  margin-left:25px;
+  overflow-y:scroll;
+}
+.cart-container::-webkit-scrollbar{
+  display:none;
+}
+.cart-container .cart{
+  width:99%;
+  min-height:250px;
+  max-height: 250px;
+  border:1px solid #00000040;
+  border-radius:8px;
+}
+.d-date{
+  padding:20px 15px;
+  font-weight:570;
+  color:#245C21;
+  letter-spacing:0.5px;
+}
+.cart-product-details{
+  width:100%;
+  height:100%;
+  display:flex;
+}
+.cart-product-details img{
+  width:150px;
+  height:170px;
+  object-fit:cover;
+}
+.pro-dtl{
+  width:200px;
+  height:150px;
+  padding-left:10px;
+  font-size:18px;
+}
+.cart-price{
+  color:#652814;
+  padding:10px 0px;
+}
+.pro-dtl p{
+  display:inline;
+  padding-right:10px;
+}
+.pro-dtl button{
+  border:none;
+  background:none;
+  font-size:15px;
+  color:#236278;
+}
+.delivery-options{
+  width:45%;
+  height:80%;
+  display:flex;
+  flex-direction:column;
+  padding:0px 10px;
+  gap:5px;
+}
+.option{
+  display:flex;
+}
+.delivery-options .head{
+  white-space:nowrap;
+  font-weight:500;
+  padding:5px 0px;
+}
+.option input{
+  margin-top:5px;
+  margin-right: 5px;
+}
+.option h4{
+  color:#115032;
+}
+.containt{
+  display:flex;
+}
+.order-summery{
+  width:40%;
+  height:300px;
+  border:1px solid #00000040;
+  border-radius:8px;
+  margin:0px 20px 0px 10px;
+}
+.order-summery h3{
+  padding:20px 0px 5px 20px;
+}
+.pricing{
+  width:95%;
+  height:60%;
+  display:grid;
+  grid-template-columns:60% 40%;
+  padding-left:20px;
+  align-items:center;
+  font-weight:400;
+}
+.p-border{
+  border-bottom:1px solid black;
+  width:50px;
+}
+.total-p, .total-t{
+  font-size:20px;
+  font-weight:600;
+  color:#5E1D05;
+  border-top:1px solid black;
+  padding-top:10px;
+}
+.order-summery button{
+  width:90%;
+  height:50px;
+  border:none;
+  background:#ECA510;
+  font-size:20px;
+  border-radius:10px;
+  margin:10px 5%;
+}
+.added{
+  margin-left:30px;
+  font-weight:500;
+  color:transparent;
+  padding:-10px;
+}
